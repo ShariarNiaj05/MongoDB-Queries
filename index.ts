@@ -65,3 +65,12 @@ db.test.find({
  * Implicit Vs Explicit
  *
  */
+
+/*****
+ * 5-6 
+ * $Exists =  db.test.find({skills: {$exists: true}}), 
+ * $Type = db.test.find({friends: {$type: "array"}}),
+ * $Size (only for array) = db.test.find({friends: {$size: 4}})
+
+ * 
+*/
