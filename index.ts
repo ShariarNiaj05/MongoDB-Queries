@@ -74,3 +74,14 @@ db.test.find({
 
  * 
 */
+
+/**
+ * 5-7 
+ * $All = db.test.find({ interests: { $all: ["Cooking", "Gaming"] } }).
+    project({ interests: 1 }) , 
+ * $ElemMatch = db.test.find({ skills: { $elemMatch: { name: "JAVASCRIPT", level: "Intermidiate"} } }).
+    project({ skills: 1 })
+    
+    
+ * 
+ * ***/
