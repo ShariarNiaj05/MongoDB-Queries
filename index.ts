@@ -82,6 +82,31 @@ db.test.find({
  * $ElemMatch = db.test.find({ skills: { $elemMatch: { name: "JAVASCRIPT", level: "Intermidiate"} } }).
     project({ skills: 1 })
     
-    
+
  * 
  * ***/
+
+/***
+ * 5-8
+ * $Set (good for primitive type. But doesn't works well for non-primitive data type) = db.test.updateOne(
+    { _id: new ObjectId("6406ad63fc13ae5a40000065") },
+    { $set: { age: 99 } }
+
+),
+ * 
+ * $AddToSet (doesn't insert duplicate value) = 
+db.test.updateOne(
+    { _id: new ObjectId("6406ad63fc13ae5a40000065") },
+    { $addToSet: { interests: { $each: ["this is more new", "each modifier new"] } } }
+
+)
+
+ * $Push (can insert duplicate value) = 
+
+// db.test.find({skills: {$exists: true}})
+db.test.updateOne(
+    { _id: new ObjectId("6406ad63fc13ae5a40000065") },
+    { $push:  { interests: { $each: ["this is more new", "each modifier new"] } } }
+
+)
+ */
