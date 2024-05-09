@@ -40,3 +40,28 @@
 }, { age: 1, gender: 1, interests: 1 })
  * 
 */
+
+/****
+ * $And = db.test.find({
+    $and:
+        [
+            { age: { $gt: 12 } },
+            { age: { $lt: 30 } },
+        ]
+})
+
+,
+ *  $Or = 
+db.test.find({
+    $or:
+        [
+            { interests: "Traveling" },
+            { interests: "Cooking" },
+        ]
+}),
+
+
+
+ * Implicit Vs Explicit
+ *
+ */
