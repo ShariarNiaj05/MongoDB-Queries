@@ -110,3 +110,23 @@ db.test.updateOne(
 
 )
  */
+
+/****
+ * 5-9 
+ * $Unset = db.test.updateOne(
+    { _id: ObjectId("6406ad63fc13ae5a40000065") },
+    {$unset: {birthday : 1 }}
+)
+, 
+ * $Pop = db.test.updateOne(
+    { _id: ObjectId("6406ad63fc13ae5a40000065") },
+    {$pop:  {friends : 1 | -1 (1 to delete last index, -1 to delete first index)}}
+)
+, 
+ * $Pull = db.test.updateOne(
+    { _id: ObjectId("6406ad63fc13ae5a40000065") },
+    {$pull:  {friends : "Tanmoy Parvez" }}
+)
+, 
+ * $PullAll
+*/
