@@ -130,3 +130,30 @@ db.test.updateOne(
 , 
  * $PullAll = it's to delete a property value of array
 */
+
+
+/****
+ * 
+ * 5-10 
+ * More About $Set  = 
+ * 
+ * update in object ==> 
+ * db.test.updateOne(
+    { _id: ObjectId("6406ad63fc13ae5a40000065") },
+    { $set: {
+        "address.city" : "CTG",
+        "address.country" : "BD",
+        "address.postalCode" : 4000
+    } }
+)
+
+update in array of object ==>
+    positional operator ($)
+    db.test.updateOne(
+    { _id: ObjectId("6406ad63fc13ae5a40000065"), "education.major" : "Art" },
+    { $set: {
+        "education.$.major" : "CSE"
+    } }
+)
+
+*/
