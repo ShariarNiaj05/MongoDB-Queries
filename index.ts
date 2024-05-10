@@ -128,5 +128,5 @@ db.test.updateOne(
     {$pull:  {friends : "Tanmoy Parvez" }}
 )
 , 
- * $PullAll
+ * $PullAll = it's to delete a property value of array
 */
