@@ -157,3 +157,14 @@ update in array of object ==>
 )
 
 */
+
+
+/****
+ * 5-11 
+ * Delete Documents = db.test.deleteOne(
+    { _id: ObjectId("6406ad63fc13ae5a40000065") }
+)
+, 
+ * Drop Collection
+ * 
+*/
